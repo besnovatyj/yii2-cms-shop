@@ -7,7 +7,6 @@
 
 declare(strict_types=1);
 
-use Besnovatyj\Shop\forms\backend\CategoryForm;
 use Besnovatyj\TreeManager\Manager\TreeDataSource;
 use Besnovatyj\TreeManager\Manager\TreeWidget;
 use yii\helpers\Html;
@@ -42,10 +41,6 @@ $this->params['breadcrumbs'][] = $this->title;
                     'toggleStatus'   => Url::to(['/Shop/backend/category/toggle-status']),
                     'checkIntegrity' => Url::to(['/Shop/backend/category/check-integrity']),
                 ],
-//                'forms' => [
-//                    'createFormClass' => CategoryForm::class,
-//                    'updateFormClass' => CategoryForm::class,
-//                ],
                 'serverForms' => [
                     'enabled'       => true,
                     'display'       => 'modal',
