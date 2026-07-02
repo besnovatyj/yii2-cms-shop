@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Besnovatyj\Shop\migrations;
 
-use common\components\migration\BaseMigration;
+use Besnovatyj\Kernel\migration\BaseMigration;
 use Yii;
 use yii\db\Exception;
 

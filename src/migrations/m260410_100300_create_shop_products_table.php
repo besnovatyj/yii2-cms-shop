@@ -9,7 +9,7 @@ declare(strict_types=1);
 
 namespace Besnovatyj\Shop\migrations;
 
-use common\components\migration\BaseMigration;
+use Besnovatyj\Kernel\migration\BaseMigration;
 use yii\base\NotSupportedException;
 
 class m260410_100300_create_shop_products_table extends BaseMigration
