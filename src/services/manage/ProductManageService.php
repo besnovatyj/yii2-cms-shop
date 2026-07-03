@@ -102,10 +102,6 @@ class ProductManageService
         $brand    = $form->brandId ? $this->brands->get($form->brandId) : null;
         $category = $this->categories->get($form->categories->main);
 
-        if ($category->isRoot()) {
-            throw new \DomainException('Нельзя назначить корневую категорию товару.');
-        }
-
         $product->edit(
             $brand?->id,
             $form->code,

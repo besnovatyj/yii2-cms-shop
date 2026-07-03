@@ -72,7 +72,7 @@ $characteristics = $characteristics ?? [];
                             $model->categories->categoriesList(),
                             ['prompt' => 'Не выбрано']
                         )->label('Основная категория') ?>
-                        <?= $form->field($model->categories, 'additional')->checkboxList($model->categories->categoriesList())->label('Дополнительные категории') ?>
+                        <?= $form->field($model->categories, 'others')->checkboxList($model->categories->categoriesList())->label('Дополнительные категории') ?>
                     </div>
                     <div class="card-footer">
                         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>

@@ -42,7 +42,6 @@ class CategoryController extends TreeController
                     'slug' => $model->slug,
                 ];
             },
-            ['id', 'name', 'slug'],
             'sort_order'
         );
 
