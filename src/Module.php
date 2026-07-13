@@ -11,6 +11,7 @@ namespace Besnovatyj\Shop;
 use Besnovatyj\Kernel\module\CmsModule;
 use Besnovatyj\Contracts\module\DeclaresModule;
 use Besnovatyj\Contracts\module\ProvidesAdminMenu;
+use Besnovatyj\Contracts\module\ProvidesBootstrap;
 use Besnovatyj\Contracts\module\ProvidesDirectories;
 use Besnovatyj\Contracts\module\ProvidesMigrations;
 
@@ -18,7 +19,7 @@ use Besnovatyj\Contracts\module\ProvidesMigrations;
  * Модуль интернет-магазина.
  */
 class Module extends CmsModule implements
-    DeclaresModule, ProvidesAdminMenu,
+    DeclaresModule, ProvidesAdminMenu, ProvidesBootstrap,
     ProvidesDirectories, ProvidesMigrations
 {
     public const bool EDITABLE = true;
@@ -32,5 +33,6 @@ class Module extends CmsModule implements
     public static function migrationPath(): string { return __DIR__.'/migrations'; }
     public static function migrationNamespace(): ?string { return __NAMESPACE__.'\\migrations'; }
     public static function directories(): array { return ['@static/origin/Shop','@static/cache/Shop'];}
+    public static function bootstrapClasses(): array { return [Bootstrap::class]; }
 
 }
