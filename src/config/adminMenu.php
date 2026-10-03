@@ -7,6 +7,9 @@
 
 declare(strict_types=1);
 
+use Besnovatyj\Contracts\adminMenu\AdminMenuLocation;
+use Besnovatyj\Contracts\adminMenu\AdminMenuPlacement;
+
 return [
 
     // Заказы
@@ -19,13 +22,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location' => 'left-sidebar',
-                    'group' => 'Shop',
-                    'groupIcon' => 'bi bi-shop',
-                    'priority' => 100,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Shop',
+                    groupIcon: 'bi bi-shop',
+                    groupPriority: 100,
+                    priority: 100,
+                ),
             ],
         ],
     ],
@@ -40,13 +43,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location' => 'left-sidebar',
-                    'group' => 'Shop',
-                    'groupIcon' => 'bi bi-shop',
-                    'priority' => 100,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Shop',
+                    groupIcon: 'bi bi-shop',
+                    groupPriority: 100,
+                    priority: 100,
+                ),
             ],
         ],
     ],
@@ -61,13 +64,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location' => 'left-sidebar',
-                    'group' => 'Shop',
-                    'groupIcon' => 'bi bi-shop',
-                    'priority' => 100,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Shop',
+                    groupIcon: 'bi bi-shop',
+                    groupPriority: 100,
+                    priority: 100,
+                ),
             ],
         ],
     ],
@@ -82,13 +85,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location' => 'left-sidebar',
-                    'group' => 'Shop',
-                    'groupIcon' => 'bi bi-shop',
-                    'priority' => 100,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Shop',
+                    groupIcon: 'bi bi-shop',
+                    groupPriority: 100,
+                    priority: 100,
+                ),
             ],
         ],
     ],
@@ -103,13 +106,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location' => 'left-sidebar',
-                    'group' => 'Shop',
-                    'groupIcon' => 'bi bi-shop',
-                    'priority' => 100,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Shop',
+                    groupIcon: 'bi bi-shop',
+                    groupPriority: 100,
+                    priority: 100,
+                ),
             ],
         ],
     ],
@@ -124,13 +127,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location' => 'left-sidebar',
-                    'group' => 'Shop',
-                    'groupIcon' => 'bi bi-shop',
-                    'priority' => 100,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Shop',
+                    groupIcon: 'bi bi-shop',
+                    groupPriority: 100,
+                    priority: 100,
+                ),
             ],
         ],
     ],
@@ -145,13 +148,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location' => 'left-sidebar',
-                    'group' => 'Shop',
-                    'groupIcon' => 'bi bi-shop',
-                    'priority' => 100,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Shop',
+                    groupIcon: 'bi bi-shop',
+                    groupPriority: 100,
+                    priority: 100,
+                ),
             ],
         ],
     ],
@@ -166,13 +169,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location' => 'left-sidebar',
-                    'group' => 'Shop',
-                    'groupIcon' => 'bi bi-shop',
-                    'priority' => 100,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Shop',
+                    groupIcon: 'bi bi-shop',
+                    groupPriority: 100,
+                    priority: 100,
+                ),
             ],
         ],
     ],
